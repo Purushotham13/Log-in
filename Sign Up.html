@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    table{
+        margin-left:auto;
+        margin-right:150px;
+        height:28%;
+        border-radius: 10px;
+        }
+        body {
+            background-image:url('https://images.pexels.com/photos/1546863/nature-milky-way-galaxy-constellations-1546863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+</style>
+<h1 style="text-align:center;margin:0px 0px 50px 0;font-size:45px;color:tomato;background-color:#d1bea8;font-family:Baskerville Old Face;border-left-style:solid;border-left: 5px solid tomato;border-top-right-radius:10px;border-bottom-right-radius:10px;">Sign Up</h1>
+<br>
+<form action="file:///C:/Users/arjun/OneDrive/Documents/HTML/Login.html">
+<table style="border:1px solid black;background-image:url('https://images.pexels.com/photos/8259445/pexels-photo-8259445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;color:white;padding:40px 0px">
+    <tr>
+        <td><strong>Name</strong><td><input type="text" placeholder="First Name"></td></tr>
+        <tr>
+            <td><strong>Last Name</strong><td><input type="text" placeholder="Last name" required></td></tr>
+    <tr>
+        <td><strong>Email</strong><td><input type="email" placeholder="enter email" required></td></tr>
+        <tr>            
+        <td><strong>DOB</strong><td><input type="date" value="DDMMYYYY" required></td></tr>
+    <tr>
+        <td><strong><label for="Age">Age</strong></label><td><input type="Number" id="Age" name="Age" min="1" max="1000" required></td></tr>
+        <tr>
+            <td><strong>Gender</strong>
+                <td><label for="Male">Male</label>
+                <input type="radio" id="Male" name="Male" value="Male">
+                <label for="Female">Female</label>
+                <input type="radio" id="Female" name="Female" value="Female"></td></tr>
+    <tr>
+        <td><strong>Graduation</strong><td><input list="Field" name="Field" required >
+        <datalist id="Field">
+            <option value="PG">
+            <option value="UG">
+            <option value="PUC">    
+        </datalist></td></tr>   
+    <tr>
+        <td><strong>Add Graduation Marklist</strong><td><input type="file" name="Choose File"></td>
+    </tr>    
+    <tr>
+        <td><strong> Remarks of Year Gap</strong><td><textarea name="message" rows="5" cols="30" placeholder="Type Here" required></textarea></td></tr>
+    <tr>
+        <td><strong>Phone</strong><td><input type="tel" placeholder="1234567891" pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}" required></td></tr>
+    <tr>
+        <td><strong>Create Password</strong><td><input type="Password" name="Password" Placeholder="@De1" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td></tr>
+    <tr>
+        <td><strong>Confirm Password</strong><td><input type="Password" name="Password" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td></tr>
+        <tr>
+            <td><td><input type="checkbox" name="Click Here" required> By clicking on box you agreed to send information</td>
+        </tr>
+    <tr>
+        <td><td><input type="submit">  <input type="Reset"></td></tr>         
+</table>
+</form>
+<body>
+    
+</body>
+</html>
